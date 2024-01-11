@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/trakt/candy_check.git
+  revision: 3d1256b7a5e97381219a05278079c7ce863963f5
+  branch: feature/subscription_acknowledgement
+  specs:
+    candy_check (0.6.0)
+      google-apis-androidpublisher_v3 (~> 0.34.0)
+      googleauth (~> 1.3.0)
+      multi_json (~> 1.15)
+      thor (< 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -83,11 +94,6 @@ GEM
     bootsnap (1.17.0)
       msgpack (~> 1.2)
     builder (3.2.4)
-    candy_check (0.6.0)
-      google-apis-androidpublisher_v3 (~> 0.34.0)
-      googleauth (~> 1.3.0)
-      multi_json (~> 1.15)
-      thor (< 2.0)
     capybara (3.39.2)
       addressable
       matrix
@@ -290,7 +296,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  candy_check
+  candy_check!
   capybara
   debug
   error_highlight (>= 0.4.0)

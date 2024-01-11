@@ -70,4 +70,6 @@ group :test do
   gem 'selenium-webdriver'
 end
 # For Google Play and Apple subscriptions
-gem 'candy_check'
+# gem 'candy_check'
+gem 'candy_check', git: 'https://github.com/trakt/candy_check.git',
+                   branch: 'feature/subscription_acknowledgement'

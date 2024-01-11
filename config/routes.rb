@@ -10,10 +10,11 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       post '/subscriptions/playstore' => 'subscriptions#playstore'
+
       post '/subscriptions/appstore' => 'subscriptions#appstore'
     end
   end
-
+  post '__callouts__/subscription/google' => 'api/v1/subscriptions#playstore'
   # Defines the root path route ("/")
   # root "posts#index"
 end
